@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+
+    "name": "Miku Always",
+    "description": "Want to see miku all the time",
+    "version": "1.0",
+
+    "permissions": [ "tabs", "https://www.google.com.au/*" ],
+
+    "browser_action": {
+        "default_icon": "img/miku.ico"
+    },
+
+    "background": {
+        "scripts": [ "eventPage.js" ],
+        "persistent": false
+    },
+
+    "content_scripts": [
+        {
+            "matches": [ "https://www.google.com.au/*" ],
+            "js": [ "jquery-2.1.4.js", "contentPage.js" ],
+            "css": ["contentPage.css"]
+        }
+    ]
+
+}
