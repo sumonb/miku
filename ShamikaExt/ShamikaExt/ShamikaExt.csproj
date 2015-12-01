@@ -38,6 +38,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="app\contentPage.css" />
     <Content Include="app\contentPage.js" />
     <Content Include="app\eventPage.js" />
     <Content Include="app\img\icon.png" />

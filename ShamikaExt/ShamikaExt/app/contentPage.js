@@ -2,22 +2,26 @@
 function pageRefresh() {
 
    
-    $('#hplogo').empty();
+    //$('#hplogo').empty();
+
     $('#logocont').empty();
 
 
     $('<img />')
         .attr('src', "http://shamika.barua.me/miku.jpg")
-        .attr('height', "200px")
-        .attr('width', "150px")
-        .appendTo($('#hplogo'));
+        .attr('height', "120px")
+        .attr('width', "100px")
+        .attr('style', "margin-bottom:-120px")
+        .attr('alt', "shamika")
+        .attr('title', "shamika")
+        .prependTo($('#lga'));
 
 
     $('<img />')
         .attr('src', "http://shamika.barua.me/miku_small.jpg")
         .appendTo($('#logocont'));
 
-    //$('#hplogo').show();
+    //$('#hplogo').remove();
 }
 
 $(function () {
